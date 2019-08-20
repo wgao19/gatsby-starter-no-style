@@ -5,12 +5,17 @@
   "license": "MIT",
   "dependencies": {
     "gatsby": "^2.13.67",
+    "gatsby-image": "2.0.7",
     "gatsby-plugin-favicon": "^3.1.6",
+    "gatsby-plugin-sharp": "^2.2.12",
+    "gatsby-source-filesystem": "^2.1.9",
+    "gatsby-transformer-sharp": "^2.2.6",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
   "scripts": {
     "develop": "gatsby develop",
+    "clean": "gatsby clean",
     "start": "npm run develop"
   },
   "devDependencies": {
