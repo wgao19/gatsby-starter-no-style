@@ -30,7 +30,7 @@ export default () => {
   } = data;
   return (
     <>
-      <p>Hi, my name is Absurd</p>
+      <p>Hi, I am Absurd</p>
       <Image fixed={fixed} />
     </>
   );
