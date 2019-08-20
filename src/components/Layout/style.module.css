@@ -1,0 +1,23 @@
+.layout {
+  background: #efefef;
+}
+
+.layout > main {
+  padding: var(--spacing);
+}
+
+.layout > nav {
+  height: 96px;
+  padding: 0 var(--spacing);
+  background: white;
+  display: flex;
+  align-items: center;
+}
+.layout > footer {
+  line-height: 40px;
+  height: 40px;
+  padding: 0 var(--spacing);
+  background: #1e1e1e;
+  color: #777;
+  text-align: center;
+}

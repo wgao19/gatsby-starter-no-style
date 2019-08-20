@@ -13,6 +13,9 @@ const typography = new T({
   bodyFontFamily: ['IBM Plex Mono', 'monospace'],
   overrideStyles: ({ rhythm }) => {
     return {
+      ':root': {
+        '--spacing': '2rem'
+      },
       h1: {
         marginTop: rhythm(1.2),
         marginBottom: rhythm(1.2),
