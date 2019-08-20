@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Profile from '../components/Profile';
 import PostBriefing from '../components/PostBriefing';
-import s from './style.module.css';
 
 export default ({
   data: {
@@ -12,12 +11,12 @@ export default ({
 }) => {
   return (
     <Layout>
-      <section className={s.page1}>
+      <section>
         <Profile />
       </section>
-      <section className={s.page2}>
+      <section>
         {posts.map((post, idx) => (
-          <PostBriefing {...post} key={post.id} heroic={idx === 0} />
+          <PostBriefing {...post} key={post.id} />
         ))}
       </section>
     </Layout>

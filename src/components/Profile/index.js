@@ -31,10 +31,7 @@ export default () => {
   return (
     <>
       <h1>Hi, I am Absurd</h1>
-      <Image
-        fixed={fixed}
-        style={{ float: 'right', margin: '0 var(--spacing)' }}
-      />
+      <Image fixed={fixed} />
       <p>
         Elit occaecat eiusmod occaecat aliqua proident esse minim magna
         cupidatat enim nostrud occaecat. Cupidatat veniam ipsum sint nostrud
