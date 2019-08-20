@@ -1,8 +1,9 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import Profile from '../components/Profile';
 
 export default () => (
   <Layout>
-    <h1>Hello, world!</h1>
+    <Profile />
   </Layout>
 );
