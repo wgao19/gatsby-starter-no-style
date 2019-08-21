@@ -2,9 +2,9 @@ import * as React from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 
-export default ({ children }) => (
+export default ({ children, currentPage }) => (
   <div>
-    <Navbar />
+    <Navbar currentPage={currentPage} />
     <main>{children}</main>
     <Footer />
   </div>
