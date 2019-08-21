@@ -13,9 +13,6 @@ const typography = new T({
   bodyFontFamily: ['IBM Plex Mono', 'monospace'],
   overrideStyles: ({ rhythm }) => {
     return {
-      ':root': {
-        '--spacing': '2rem'
-      },
       h1: {
         marginTop: rhythm(1.2),
         marginBottom: rhythm(1.2),
@@ -25,13 +22,9 @@ const typography = new T({
       a: {
         color: '#222',
         textDecoration: 'none',
-        borderBottom: '1.5px solid gold',
-        paddingBottom: '2px',
-        transition: 'all .1s ease'
+        paddingBottom: '2px'
       },
-      'a:hover, a:active, a:focus': {
-        borderBottom: '3px solid gold'
-      }
+      'a:hover, a:active, a:focus': {}
     };
   }
 });

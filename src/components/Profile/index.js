@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 
-export default () => {
+export default ({ className }) => {
   const data = useStaticQuery(graphql`
     query ProfileImageQuery {
       file(relativePath: { eq: "absurd.png" }) {
@@ -29,7 +29,7 @@ export default () => {
     }
   } = data;
   return (
-    <>
+    <div className={className}>
       <h1>Hi, I am Absurd</h1>
       <Image
         fixed={fixed}
@@ -65,6 +65,6 @@ export default () => {
         nostrud exercitation dolor ad commodo duis culpa id eiusmod pariatur
         veniam cupidatat cupidatat.
       </p>
-    </>
+    </div>
   );
 };

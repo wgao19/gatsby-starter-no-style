@@ -1,11 +1,8 @@
-.page1 {
-  min-height: calc(100vh - 40px - 96px - 2 * var(--spacing));
+.profilePage {
+  min-height: calc(
+    100vh - var(--footer-height) - var(--navbar-height) - 2 * var(--spacing)
+  );
 }
-.page2 {
-  margin: 0 auto var(--spacing);
-  border-radius: 2px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 6.66667%;
-  grid-auto-flow: dense;
+.profilePage h1 {
+  margin-top: 0;
 }

@@ -7,7 +7,7 @@
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 100px 6.66667%;
+  grid-gap: 100px calc(100% / 15);
   grid-auto-flow: dense;
   margin-bottom: calc(2 * var(--spacing));
 }

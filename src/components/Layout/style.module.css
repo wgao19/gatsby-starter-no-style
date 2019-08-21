@@ -1,3 +1,9 @@
+:root {
+  --spacing: 2rem;
+  --footer-height: 72px;
+  --navbar-height: 96px;
+}
+
 .layout {
   background: #efefef;
 }
@@ -6,16 +12,9 @@
   padding: var(--spacing);
 }
 
-.layout > nav {
-  height: 96px;
-  padding: 0 var(--spacing);
-  background: white;
-  display: flex;
-  align-items: center;
-}
 .layout > footer {
-  line-height: 40px;
-  height: 40px;
+  line-height: var(--footer-height);
+  height: var(--footer-height);
   padding: 0 var(--spacing);
   background: #1e1e1e;
   color: #777;

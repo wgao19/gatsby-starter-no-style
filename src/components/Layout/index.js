@@ -3,9 +3,9 @@ import Navbar from '../Navbar';
 import Footer from '../Footer';
 import s from './style.module.css';
 
-export default ({ children }) => (
+export default ({ children, currentPage }) => (
   <div className={s.layout}>
-    <Navbar />
+    <Navbar currentPage={currentPage} />
     <main>{children}</main>
     <Footer />
   </div>

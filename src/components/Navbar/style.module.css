@@ -1,0 +1,18 @@
+.active {
+  border-bottom: 3px solid gold;
+}
+.normal {
+  border-bottom: 3px solid transparent;
+  transition: all 0.1s ease;
+}
+.link {
+  margin-right: 1em;
+}
+
+.navbar {
+  height: var(--navbar-height);
+  padding: 0 var(--spacing);
+  background: white;
+  display: flex;
+  align-items: center;
+}
