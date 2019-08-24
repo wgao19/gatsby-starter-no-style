@@ -1,0 +1,9 @@
+.article {
+  padding: var(--spacing);
+  margin: var(--spacing) auto;
+  max-width: 53rem;
+}
+
+.cover {
+  background: white;
+}

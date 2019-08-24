@@ -1,0 +1,9 @@
+.blog {
+  margin: var(--spacing) auto;
+}
+
+@media screen and (min-width: 980px) {
+  .blog {
+    padding: var(--spacing);
+  }
+}

@@ -4,7 +4,7 @@ import Profile from '../components/Profile';
 
 export default ({ location: { pathname } }) => {
   return (
-    <Layout currentPage={pathname}>
+    <Layout currentPage={pathname} className={s.home}>
       <Profile />
     </Layout>
   );
