@@ -13,7 +13,7 @@ const typography = new T({
       styles: ['400', '400i']
     }
   ],
-  headerFontFamily: ['Nunito', 'monospace'],
+  headerFontFamily: ['Nunito', 'sans-serif'],
   bodyFontFamily: ['IBM Plex Sans', 'monospace'],
   overrideStyles: ({ rhythm }) => {
     return {
