@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
+import s from './style.module.css';
 
 const PostBriefing = ({
   excerpt,
@@ -8,7 +9,7 @@ const PostBriefing = ({
   frontmatter: {
     title,
     cover: {
-      childImageSharp: { fixed /*fluid */ }
+      childImageSharp: { fluid }
     }
   },
   className
