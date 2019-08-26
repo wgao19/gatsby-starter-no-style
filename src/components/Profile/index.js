@@ -29,9 +29,12 @@ export default ({ className }) => {
     }
   } = data;
   return (
-    <div className={className}>
-      <h1>Hi, I am Absurd</h1>
-      <Image fixed={fixed} />
+    <div>
+      <h1 style={{ marginTop: '0' }}>Hi, I am Absurd</h1>
+      <Image
+        fixed={fixed}
+        style={{ float: 'right', margin: '0 var(--spacing)' }}
+      />
       <p>
         Elit occaecat eiusmod occaecat aliqua proident esse minim magna
         cupidatat enim nostrud occaecat. Cupidatat veniam ipsum sint nostrud
@@ -50,17 +53,6 @@ export default ({ className }) => {
         aliquip. Culpa ipsum incididunt amet ullamco exercitation ullamco mollit
         eu ea do nulla eu tempor. Commodo duis labore magna qui sit do laboris
         labore ullamco exercitation veniam elit do.
-      </p>
-      <p>
-        Proident reprehenderit esse voluptate voluptate laboris irure et laboris
-        pariatur occaecat est reprehenderit. Officia enim proident eiusmod
-        dolore magna consectetur quis dolor in. Quis aute velit amet aute
-        commodo ea ullamco eu est anim ut duis exercitation. Adipisicing enim
-        nostrud adipisicing et culpa irure exercitation. Et mollit cillum
-        occaecat laborum proident incididunt pariatur. Nostrud consequat sunt eu
-        aute amet sint esse tempor cillum commodo enim nulla cillum. Adipisicing
-        nostrud exercitation dolor ad commodo duis culpa id eiusmod pariatur
-        veniam cupidatat cupidatat.
       </p>
     </div>
   );

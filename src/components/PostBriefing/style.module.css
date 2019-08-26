@@ -1,0 +1,33 @@
+.image {
+  background: white;
+  border-radius: 2px;
+  box-shadow: #efefef 2px 2px 1px 0;
+}
+
+@media screen and (max-width: 979px) {
+  .content {
+    padding: var(--spacing, 2rem);
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .post {
+    grid-row: auto;
+    grid-column: span 1;
+  }
+  .post:first-child {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px calc(100% / 15);
+    grid-auto-flow: dense;
+    margin-bottom: calc(2 * var(--spacing));
+  }
+  .post:first-child .image {
+    grid-column: 1 / span 2;
+  }
+  .title {
+    line-height: 1.7;
+    min-height: calc(2em * 1.7);
+  }
+}

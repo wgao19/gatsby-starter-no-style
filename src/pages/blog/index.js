@@ -1,7 +1,7 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import Layout from '../../components/Layout';
-import PostBriefing from '../../components/PostBriefing';
+import PostListing from '../../components/PostListing';
+import s from './style.module.css';
 
 export default ({
   location: { pathname },
@@ -10,32 +10,28 @@ export default ({
   }
 }) => {
   return (
-    <Layout currentPage={pathname}>
-      <section>
-        {posts.map((post, idx) => (
-          <PostBriefing {...post} key={post.id} heroic={idx === 0} />
-        ))}
-      </section>
+    <Layout currentPage={pathname} className={s.blog}>
+      <PostListing posts={posts} />
     </Layout>
   );
 };
 
 export const pageQuery = graphql`
-  query HomeQuery {
+  query BlogQuery {
     posts: allMarkdownRemark {
       nodes {
         timeToRead
         excerpt
         id
+        fields {
+          slug
+        }
         frontmatter {
           title
           cover {
             childImageSharp {
               fluid {
                 ...GatsbyImageSharpFluid
-              }
-              fixed(width: 320, height: 180) {
-                ...GatsbyImageSharpFixed
               }
             }
           }

@@ -1,0 +1,27 @@
+:root {
+  --spacing: 2rem;
+  --footer-height: 72px;
+  --navbar-height: 96px;
+}
+
+.layout {
+  background: #efefef;
+}
+
+.layout > main {
+  min-height: calc(100vh - var(--footer-height) - var(--navbar-height));
+}
+
+.layout > footer {
+  line-height: var(--footer-height);
+  height: var(--footer-height);
+  background: #1e1e1e;
+  color: #777;
+  text-align: center;
+}
+
+@media screen and (max-width: 979px) {
+  .layout {
+    --spacing: 1rem;
+  }
+}
