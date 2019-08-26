@@ -3,8 +3,6 @@ title: 'Style Guide'
 cover: ./cover.png
 ---
 
-[cover credit](https://www.creativeboom.com/inspiration/maaike-cannes-suggestive-and-vibrant-illustrations-inspired-by-japanese-traditions/)
-
 # Markdown Style Guide
 
 To serve as an example page when styling markdown based Gatsby sites.
