@@ -30,7 +30,7 @@ export default ({ currentPage }) => {
           key={path}
           className={cx(
             css`
-              border-bottom: 3px solid
+              border-bottom: 1.5px solid
                 ${path === currentPage ? 'gold' : 'transparent'};
               transition: all 0.1s ease;
               margin-right: calc(var(--spacing) / 2);

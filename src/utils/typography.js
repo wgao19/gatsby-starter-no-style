@@ -29,9 +29,13 @@ const typography = new T({
       a: {
         color: '#222',
         textDecoration: 'none',
-        paddingBottom: '2px'
+        borderBottom: '3px solid gold',
+        paddingBottom: '2px',
+        transition: 'all .2s ease'
       },
-      'a:hover, a:active, a:focus': {}
+      'a:hover, a:active, a:focus': {
+        borderBottom: '1.5px solid gold'
+      }
     };
   }
 });
