@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import { css, cx } from 'emotion';
 
 const items = [
   {
@@ -15,28 +14,9 @@ const items = [
 
 export default ({ currentPage }) => {
   return (
-    <nav
-      className={css`
-        height: var(--navbar-height);
-        padding: 0 var(--spacing);
-        background: white;
-        display: flex;
-        align-items: center;
-      `}
-    >
+    <nav>
       {items.map(({ path, title }) => (
-        <Link
-          to={path}
-          key={path}
-          className={cx(
-            css`
-              border-bottom: 1.5px solid
-                ${path === currentPage ? 'gold' : 'transparent'};
-              transition: all 0.1s ease;
-              margin-right: calc(var(--spacing) / 2);
-            `
-          )}
-        >
+        <Link to={path} key={path}>
           {title}
         </Link>
       ))}

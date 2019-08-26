@@ -1,16 +1,12 @@
 import React from 'react';
 import Image from 'gatsby-image';
 import Layout from '../../components/Layout';
-import s from './style.module.css';
 
 export default ({ data: { post }, location: { pathname } }) => {
   return (
     <Layout currentPage={pathname}>
-      <Image
-        fluid={post.frontmatter.cover.childImageSharp.fluid}
-        className={s.cover}
-      />
-      <div className={s.article}>
+      <Image fluid={post.frontmatter.cover.childImageSharp.fluid} />
+      <div>
         <h1>{post.frontmatter.title}</h1>
         <article dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>

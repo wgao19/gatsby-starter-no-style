@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import PostListing from '../../components/PostListing';
-import s from './style.module.css';
 
 export default ({
   location: { pathname },
@@ -10,7 +9,7 @@ export default ({
   }
 }) => {
   return (
-    <Layout currentPage={pathname} className={s.blog}>
+    <Layout currentPage={pathname}>
       <PostListing posts={posts} />
     </Layout>
   );
