@@ -1,11 +1,34 @@
 import * as React from 'react';
-import Navbar from '../Navbar';
-import Footer from '../Footer';
+import { Link } from 'gatsby';
 
 export default ({ children, currentPage, className }) => (
   <div>
-    <Navbar currentPage={currentPage} />
+    <nav>
+      {[
+        {
+          path: '/',
+          title: 'Home'
+        },
+        {
+          path: '/blog',
+          title: 'Blog'
+        }
+      ].map(({ path, title }) => (
+        <Link
+          to={path}
+          key={path}
+          className={currentPage === path ? 'active' : 'normal'}
+        >
+          {title}
+        </Link>
+      ))}
+    </nav>
     <main className={className}>{children}</main>
-    <Footer />
+    <footer>
+      Built with{' '}
+      <span role="img" aria-label="heart">
+        💛
+      </span>
+    </footer>
   </div>
 );
