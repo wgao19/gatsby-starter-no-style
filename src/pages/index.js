@@ -37,9 +37,10 @@ export default ({ location: { pathname } }) => {
         <p>
           Elit occaecat eiusmod occaecat aliqua proident esse minim magna
           cupidatat enim nostrud occaecat. Cupidatat veniam ipsum sint nostrud
-          incididunt labore labore laborum consequat commodo ipsum. Exercitation
-          ipsum fugiat fugiat excepteur officia sint esse tempor consequat
-          dolore exercitation ex. Elit veniam sit exercitation in.
+          incididunt <a href="#">labore labore laborum consequat</a> commodo
+          ipsum. Exercitation ipsum fugiat fugiat excepteur officia sint esse
+          tempor consequat dolore exercitation ex. Elit veniam sit exercitation
+          in.
         </p>
         <p>
           Aliquip aliqua consequat qui anim ad sint eu elit tempor non eu.
@@ -49,10 +50,13 @@ export default ({ location: { pathname } }) => {
         </p>
         <p>
           In minim qui amet velit amet ea minim nulla nisi mollit qui.
-          Incididunt velit sint consequat non do adipisicing consectetur laborum
-          minim et aliquip. Culpa ipsum incididunt amet ullamco exercitation
-          ullamco mollit eu ea do nulla eu tempor. Commodo duis labore magna qui
-          sit do laboris labore ullamco exercitation veniam elit do.
+          <a href="#">
+            Incididunt velit sint consequat non do adipisicing consectetur
+            laborum minim et aliquip.
+          </a>{' '}
+          Culpa ipsum incididunt amet ullamco exercitation ullamco mollit eu ea
+          do nulla eu tempor. Commodo duis labore magna qui sit do laboris
+          labore ullamco exercitation veniam elit do.
         </p>
       </div>
     </Layout>
