@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import isCurrentPage from '../../utils/isCurrentPage';
 
 export default ({ children, currentPage, className }) => (
   <div>
@@ -17,7 +18,7 @@ export default ({ children, currentPage, className }) => (
         <Link
           to={path}
           key={path}
-          className={currentPage === path ? 'active' : 'normal'}
+          className={isCurrentPage(currentPage, path) ? 'active' : 'normal'}
         >
           {title}
         </Link>
