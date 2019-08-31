@@ -1,4 +1,5 @@
 import React from 'react';
+import { css } from 'emotion';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Image from 'gatsby-image';
@@ -33,7 +34,13 @@ export default ({ location: { pathname } }) => {
     <Layout currentPage={pathname}>
       <div>
         <h1>Hi, I am Absurd</h1>
-        <Image fixed={fixed} />
+        <Image
+          fixed={fixed}
+          className={css`
+            float: right;
+            margin: var(--spacing);
+          `}
+        />
         <p>
           Elit occaecat eiusmod occaecat aliqua proident esse minim magna
           cupidatat enim nostrud occaecat. Cupidatat veniam ipsum sint nostrud
